@@ -9,7 +9,7 @@ public class UserRetrievedEvent extends ApplicationEvent {
     private final List<User> users;
 
     public UserRetrievedEvent(Object source, List<User> users) {
-        super(source);
+        super(source); // super is used to call the constructor of the parent class, 부모 클래스를 나타낸다.
         this.users = users;
     }
 
